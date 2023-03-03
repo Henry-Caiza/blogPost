@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+
+
+
     .blogs-main-new {
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
@@ -35,26 +38,20 @@
     }
 
     .contact-main-container {
-        width: 100%;
-        height: 260px;
-        background-color: var(--tertiary-color);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
     }
 
     .contact-main-container img {
-        width: 50px;
+        width: 70px;
     }
 
     .contact-left-container,
     .contact-right-container {
         display: flex;
-        width: 48%;
-        align-items: end;
-        gap: 12px;
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 80%;
+        gap: 20px;
     }
 
     .contact-left a,
@@ -66,10 +63,54 @@
     .contact-right p {
         margin-top: 20px;
     }
+
+    header .header-icons-container .icons {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+    nav .nav-logo-container img {
+        width: 180px;
+        margin-top: 10px;
+    }
+
+    nav .nav-logo-container {
+        margin-left: 20px;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .home-main-text {
+        font-size: 3rem;
+        letter-spacing: 8px;
+        top: 220px;
+    }
+
+    .home-main-btn {
+        width: 120px;
+        height: 40px;
+        margin-top: 140px;
+        font-size: 1.6rem;
+        color: white;
+        font-weight: 700;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        padding: 8px;
+    }
 }
 
 @media (max-width: 600px) {
     .blogs-posts-container .post-container {
         max-width: 95%;
+    }
+
+    .perfil-body-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: start;
+        margin-top: 40px;
     }
 }
